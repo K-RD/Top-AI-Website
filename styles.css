@@ -1,33 +1,61 @@
+/* Style for the overall container */
 .container {
-    /* display: flex; */
+    display: flex;
     justify-content: space-between;
+    margin: 20px; /* Added margin for better spacing */
 }
 
+/* Style for the left content */
 .left {
-    /* flex: 1; */
     padding: 20px;
-    width: 70vw;
-    /* text-justify: ; */
-    /* background: #000; */
+    width: 70%; /* Adjusted to a percentage for responsiveness */
 }
 
+/* Style for the right table of contents */
 .right {
-    /* flex: 0 0 300px; */
     padding: 20px;
     background-color: #f5f5f5;
-    position: fixed;
+    position: sticky;
     top: 20px;
     right: 20px;
     height: 90vh;
-    width: 20vw;
+    width: 30%; /* Adjusted to a percentage for responsiveness */
+    overflow-y: auto; /* Added scroll for long content */
 }
 
-#right-box{
+/* Style for the right-side table of contents */
+#right-box {
     list-style-type: none;
+    padding: 0;
 }
-#right-box>li{
+
+#right-box > li {
     padding: 5px 0;
 }
-#right-box>li>a{
+
+#right-box > li > a {
     text-decoration: none;
+    color: #333; /* Adjusted link color for better readability */
+}
+
+/* Style for headings in the left content */
+.left h2 {
+    font-size: 24px; /* Adjusted font size for better readability */
+    color: #333; /* Adjusted heading color for better readability */
+}
+
+/* Style for description and lists in the left content */
+.left p, .left li {
+    font-size: 16px; /* Adjusted font size for better readability */
+    color: #555; /* Adjusted text color for better readability */
+}
+
+/* Style for strong text (e.g., benefits and limitations) */
+.left strong {
+    color: #007BFF; /* Added color for strong text for emphasis */
+}
+
+/* Style for hyperlinks within the left content */
+.left a {
+    color: #007BFF; /* Adjusted link color for better readability */
 }
